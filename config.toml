@@ -1,5 +1,5 @@
 # Site settings
-baseurl = ""
+baseurl = "https://championsm.com"
 languageCode = "en-us"
 title = "Champion"
 theme = "hugo-agency-theme"
