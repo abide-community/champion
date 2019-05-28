@@ -3,6 +3,7 @@ baseurl = ""
 languageCode = "en-us"
 title = "Champion"
 theme = "hugo-agency-theme"
+publishDir = "docs"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -22,7 +23,7 @@ googleAnalytics = ""
   # email = "your@email.com"
 
   # Link custom assets relative to /static
-  custom_css = []
+  custom_css = ["css/custom.css"]
   custom_js  = []
   favicon    = "favicon.ico"
 
@@ -48,11 +49,11 @@ googleAnalytics = ""
   [params.navigation]
     brand = "The Agency"
     # Optional logo as brand stored in img/
-    #logo = "logo.svg"
-    services = "Services"
-    portfolio = "Portfolio"
-    about = "About"
-    team = "Team"
+    logo = "logo1.png"
+    services = "About"
+    portfolio = "Gallery"
+    about = "Donate"
+    team = "Chaplains"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -76,36 +77,36 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To Our Studio!"
-    subtitle = "It's nice to meet you"
-    buttonText = "Tell me more"
+    title = "Bringing the love of God"
+    subtitle = "To a field near you."
+    buttonText = "Learn more"
 
 
   # Services section
   [params.services]
     enable = true
-    title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Welcome to Champion!"
+    subtitle = "Champion is a sports ministry that helps amateur and professional athletes become fully devoted followers of Christ."
 
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      icon = "fa-hands-helping"
+      title = "Chaplains"
+      description = "At Champion, we strive to have an available chaplain who can serve athletes in their environment and on their time. Our team of chaplains continues to grow as more athletes realize the advantage of the friendship and mentorship chaplains provide."
+      url = ""
 
     [[params.services.row.list]]
-      icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      icon = "fa-church"
+      title = "Chapel Services"
+      description = "Before games, chaplains provide and facilitate a team-specific group service for interested players designed to encourage athletes on their professional and spiritual journey. Chapel services are times for teammates to grow closer with God and each other."
+      url = ""
 
     [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      icon = "fa-user-friends"
+      title = "Bible Studies"
+      description = "Every week, players are invited by the chaplain to attend a bible study where they can learn more about God's word, ask important questions, and grow in their own spiritual journey. Bible studies help cultivate confidence and direction for players' lives."
+      url = ""
 
   # Portfolio section
   [params.portfolio]
@@ -160,11 +161,14 @@ googleAnalytics = ""
 
 
   # Team section
+   [params.team.modal]
+      teamname = "Team"
+      buttonText = "Close"
   [params.team]
     enable = true
     # Possibility to center items
     #center = true
-    title = "Our amazing team"
+    title = "Our Chaplains"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
 
