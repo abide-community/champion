@@ -214,7 +214,7 @@ donorbox = "champion"
 
   # Contact section
   [params.contact]
-    enable = true
+    enable = false
     title = "Contact us"
     subtitle  = "For any questions, please send us an email and a member of our team will reply shortly."
     buttonText = "Send message"
