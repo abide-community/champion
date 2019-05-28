@@ -1,0 +1,22 @@
+{{ "<!-- Services -->" | safeHTML }}
+<section id="donate">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.donate.title }}{{ . }}{{ end }}</h2>
+        <h3 class="section-subheading text-muted">{{ with .Site.Params.donate.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
+    </div>
+      <div class="row">
+          <div class="col-md-6">
+            <p class="text-muted">{{ with .Site.Params.donate.description }}{{ . | markdownify }} {{end}}</p>
+          </div>
+          <div class="col-md-6">
+          <div class="center-iframe">
+<iframe class="donorbox-form" width="100%" max-width:500px; height="685px" src="https://donorbox.org/embed/{{ $.Site.Params.donate.donorbox }}?hide_donation_meter=true" frameborder="0" style="max-width:700px; min-width:310px; max-height:none!important" seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no">
+</iframe>
+		</div>
+          </div>
+      </div>
+  </div>
+</section>

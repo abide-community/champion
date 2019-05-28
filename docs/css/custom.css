@@ -3,6 +3,14 @@ header {
     background-blend-mode: soft-light;
 }
 
+section#contact {
+    background-color: #222;
+    background-image: url(../img/champion_110.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+
 #team .team-item {
     right: 0;
     margin: 0 0 15px;
@@ -15,9 +23,7 @@ header {
     max-width: 400px;
 }
 
-#team .team-item .team-link img {
-    height: 360px;
-}
+
 
 #team .team-item .team-link .team-hover {
     position: absolute;

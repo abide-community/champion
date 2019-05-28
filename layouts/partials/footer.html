@@ -1,11 +1,12 @@
 {{ "<!-- Footer section -->" | safeHTML }}
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row center">
+      <div class="col-md-12">
         <span class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</span>
       </div>
-      <div class="col-md-4">
+        <div class="row">
+      <div class="col-md-6">
         <ul class="list-inline social-buttons">
 
           {{ range .Site.Params.footer.social }}
@@ -14,7 +15,7 @@
 
         </ul>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <ul class="list-inline quicklinks">
 
           {{ range .Site.Params.footer.quicklinks }}
@@ -25,4 +26,5 @@
       </div>
     </div>
   </div>
+    </div>
 </footer>

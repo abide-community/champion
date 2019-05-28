@@ -18,6 +18,10 @@
     {{ if .Site.Params.about.enable }}
       {{ partial "about.html" . }}
     {{ end }}
+      
+    {{ if .Site.Params.donate.enable }}
+      {{ partial "donate.html" . }}
+    {{ end }}
 
     {{ if .Site.Params.team.enable }}
       {{ partial "team.html" . }}

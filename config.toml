@@ -52,8 +52,10 @@ googleAnalytics = ""
     logo = "logo1.png"
     services = "About"
     portfolio = "Gallery"
-    about = "Donate"
+    about = "About"
+    donate = "Donate"
     team = "Chaplains"
+    clients_list = "Teams"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -67,10 +69,10 @@ googleAnalytics = ""
     #  weight = 10
 
     # postpended links
-    [[menu.postpend]]
-      url = "http://gohugo.io"
-      name = "External link"
-      weight = 10
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
 
 
   # Hero section
@@ -115,19 +117,25 @@ googleAnalytics = ""
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
-    title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Gallery"
+    subtitle = "See Champion Sports Ministries in action helping athletes become fully devoted followers of Jesus."
 
     [params.portfolio.modal]
-      client = "Client"
       date = "Date"
       category = "Category"
-      buttonText = "Close project"
+      buttonText = "Close"
 
+# Donate Section
+[params.donate]
+enable = true
+title = "Donate"
+subtitle = "Your gifts make it possible for our ministry to succeed."
+description = "In order to sustain our work of helping local athletes become fully devoted followers of Christ, Champion receives donations as part of [Abide Ministries](https://abide.community), a 501c3 organization located in Rochester, MI that provides financial and organizational oversight. All donations made to Champion are tax-deductible through Abide Ministries. Abide partners with Donorbox to enable donors to make one time and recurring donations, while allowing them to manage their own giving in a safe, secure, and reliable environment. Online gifts can be made using the form on this page, or at https://donorbox.org/champion. You can make one-time or recurring gifts using credit cards, debit cards, or bank transfers. All transactions are processed through Donorbox (a Stripe partner) for the highest level of security and convenience. Once you make a gift, you can manage your gift at www.donorbox.org. <br><br><h4>CHECK GIFTS</h4>Check gifts can be made out to: <br><br>Abide Ministries<br>323 Linwood Dr<br>Rochester, MI 48307<br><br>Please add “Champion” to the memo line of all check gifts. For any questions regarding giving, please email [info@championsm.com](mailto:info@championsm.com)."
+donorbox = "champion"
 
     # About section
   [params.about]
-    enable = true
+    enable = false
     title = "About"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     endpoint = "Be part<br>of our<br>story!"
@@ -169,51 +177,13 @@ googleAnalytics = ""
     # Possibility to center items
     #center = true
     title = "Our Chaplains"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = "Meet the individuals who serve the players as chaplains for Champion Sports Ministries."
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
 
   # Client section
     [params.clients_list]
@@ -221,32 +191,32 @@ She worked at Pied Piper for years until they went belly up."""
       # Possibility to center items
       #center = true
       # Optional client title specifying the involvement
-      #title = "Used and trusted by"
+      title = "PROUDLY SERVING"
 
       # All the clients' logos are stored under 'static/img/logos'.
       # Replace them with your clients's logos.
       # Suggestion: .svg in the size of 280px*80px looks good
       [[params.clients]]
-        logo = "envato.jpg"
-        link = "#"
+        logo = "beavers.png"
+        link = "https://uspbl.com/teams/birmingham-bloomfield-beavers"
 
       [[params.clients]]
-        logo = "designmodo.jpg"
-        link = "#"
+        logo = "hoppers.png"
+        link = "https://uspbl.com/teams/eastside-diamond-hoppers/"
 
       [[params.clients]]
-        logo = "themeforest.jpg"
-        link = "#"
+        logo = "unicorns.png"
+        link = "https://uspbl.com/teams/utica-unicorns/"
 
       [[params.clients]]
-        logo = "creative-market.jpg"
-        link = "#"
+        logo = "mammoths.png"
+        link = "https://uspbl.com/teams/westside-woolly-mammoths/"
 
   # Contact section
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = "For any questions, please send us an email and a member of our team will reply shortly."
     buttonText = "Send message"
     # netlify = true
 
@@ -268,7 +238,7 @@ She worked at Pied Piper for years until they went belly up."""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+    email = "info@championsm.com"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
@@ -306,27 +276,27 @@ She worked at Pied Piper for years until they went belly up."""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Published under the Apache License 2.0."
+    copyright = "Copyright &copy;2019 Champion Sports Ministries. All Rights Reserved."
 
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "#"
-      title = "Twitter"
+  #  [[params.footer.social]]
+  #    icon = "fa-twitter"
+  #    link = "#"
+  #    title = "Twitter"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      link = "#"
-      title = "Facebook"
+  #  [[params.footer.social]]
+  #    icon = "fa-facebook"
+  #    link = "#"
+  #    title = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      link = "#"
-      title = "LinkedIn"
+   # [[params.footer.social]]
+    #  icon = "fa-linkedin"
+     # link = "#"
+      #title = "LinkedIn"
 
-    [[params.footer.quicklinks]]
-      text = "Privacy Policy"
-      link = "#"
+#    [[params.footer.quicklinks]]
+ #     text = "Privacy Policy"
+  #    link = "#"
 
-    [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+   # [[params.footer.quicklinks]]
+    #  text = "Terms of Use"
+     # link = "#"

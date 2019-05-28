@@ -385,7 +385,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link img {
-    height: 240px;
+   /* height: 240px;*/
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
